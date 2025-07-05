@@ -1,1 +1,11 @@
-vendor
+node_modules
+.env
+.env.*
+tests/
+docker-compose.yml
+webpack.mix.js
+vite.config.js
+resources/js/
+resources/css/
+public/hot
+storage/*.key
