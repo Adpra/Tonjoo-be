@@ -10,14 +10,5 @@
       "src": "/(.*)",
       "dest": "/api/index.php"
     }
-  ],
-  "env": {
-    "APP_ENV": "production",
-    "APP_DEBUG": "true",
-    "APP_URL": "https://tonjoo-be.vercel.app",
-    "VIEW_COMPILED_PATH": "/tmp",
-    "CACHE_DRIVER": "array",
-    "SESSION_DRIVER": "cookie",
-    "LOG_CHANNEL": "stderr"
-  }
+  ]
 }

@@ -3,7 +3,7 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "build": "echo 'No build needed for Laravel API'",
+        "build": "echo 'skip build'",
         "dev": "vite"
     },
     "devDependencies": {
