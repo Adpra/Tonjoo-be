@@ -7,21 +7,8 @@
   },
   "routes": [
     {
-      "src": "/img/(.*)",
-      "dest": "/public/img/$1"
-    },
-    {
       "src": "/(.*)",
       "dest": "/api/index.php"
     }
-  ],
-  "env": {
-    "APP_ENV": "production",
-    "APP_DEBUG": "true",
-    "APP_URL": "https://tonjoo-be.vercel.app",
-    "LOG_CHANNEL": "stderr",
-    "SESSION_DRIVER": "cookie",
-    "CACHE_DRIVER": "array",
-    "VIEW_COMPILED_PATH": "/tmp"
-  }
+  ]
 }
