@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\API\V1\AuthController;
 use App\Http\Controllers\API\V1\CategoryController;
+use App\Http\Controllers\API\V1\NumbersController;
+use App\Http\Controllers\API\V1\RecapController;
 use App\Http\Controllers\API\V1\TransactionController;
 use App\Http\Controllers\API\V1\UserController;
 use Illuminate\Http\Request;
@@ -29,6 +31,7 @@ Route::name('v1.')
         function () {
             Route::post('register', [AuthController::class, 'register']);
             Route::post('login', [AuthController::class, 'login']);
+
         }
     );
 
@@ -43,4 +46,7 @@ Route::name('v1.')
         Route::apiResource('users', UserController::class);
         Route::apiResource('transactions', TransactionController::class);
         Route::get('categories', [CategoryController::class, 'index']);
+        Route::get('recaps', [RecapController::class, 'index']);
+
+        Route::get('/fibonacci-product/{n1}/{n2}', [NumbersController::class, 'fibonacciProduct']);
     });
