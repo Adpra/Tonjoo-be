@@ -1,7 +1,1 @@
-app/
-bootstrap/
-config/
-routes/
-vendor/
-composer.json
-artisan
+vendor
