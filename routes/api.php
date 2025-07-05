@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\API\V1\AuthController;
+use App\Http\Controllers\API\V1\CategoryController;
+use App\Http\Controllers\API\V1\TransactionController;
 use App\Http\Controllers\API\V1\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -39,4 +41,6 @@ Route::name('v1.')
         Route::get('me', [AuthController::class, 'me']);
 
         Route::apiResource('users', UserController::class);
+        Route::apiResource('transactions', TransactionController::class);
+        Route::get('categories', [CategoryController::class, 'index']);
     });
