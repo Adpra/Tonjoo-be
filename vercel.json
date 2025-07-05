@@ -14,7 +14,7 @@
   "env": {
     "APP_ENV": "production",
     "APP_DEBUG": "true",
-    "APP_URL": "https://your-vercel-app.vercel.app",
+    "APP_URL": "https://your-laravel-app.vercel.app",
     "VIEW_COMPILED_PATH": "/tmp",
     "CACHE_DRIVER": "array",
     "LOG_CHANNEL": "stderr",
